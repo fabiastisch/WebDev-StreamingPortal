@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
 </head>
 <body>
 
+<h1>Filme</h1>
+
+<div data-bind="foreach: categories">
+    <div data-bind="text: name">
+
+    </div>
+    <div data-bind="foreach: movies">
+        <div data-bind="text:name"></div>
+    </div>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
