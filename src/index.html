@@ -25,7 +25,7 @@
         <div class="row mx-auto my-auto justify-content-center carusellWidth">
             <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bind="attr: { id: 'carousel' + $index() }">
                 <div class="carousel-inner" role="listbox">
-                   <div class="row" data-bind="foreach: movies">
+                   <div class="row" data-bind="foreach: movies, attr: { id: 'carouselrow' + $index() }">
                        <!-- ko if: $index() === 0 -->
                        <div class="carousel-item active">
                            <div class="col-md-2">

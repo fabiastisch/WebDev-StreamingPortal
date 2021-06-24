@@ -52,14 +52,46 @@ function ViewModel() {
     ]
 }
 
-ko.applyBindings(new ViewModel());
+const viewModel = new ViewModel();
+ko.applyBindings(viewModel);
 
+
+viewModel.categories.forEach((value, index) => {
+    let elements = document.getElementById('carouselrow' + index);
+    //console.log(items)
+    let items = [];
+    elements.childNodes.forEach(el=> {
+        if (el.className == 'carousel-item' ||el.className == 'carousel-item active' ) {
+            items.push(el)
+        }
+    });
+
+    items.forEach(el => {
+            const minPerSlide = 6
+            let next = el.nextElementSibling
+            for (var i = 1; i < minPerSlide; i++) {
+                if (!next) {
+                    // wrap carousel by using first child
+                    next = items[0]
+
+                }
+                let cloneChild = next.cloneNode(true)
+                //  console.log(el);
+                el.appendChild(cloneChild.children[0])
+                next = next.nextElementSibling
+            }
+    });
+});
+
+
+/*
 let items = document.querySelectorAll('.carousel .carousel-item')
+
 
 items.forEach((el) => {
     const minPerSlide = 6
     let next = el.nextElementSibling
-    for (var i=1; i<minPerSlide; i++) {
+    for (var i = 1; i < minPerSlide; i++) {
         if (!next) {
             // wrap carousel by using first child
             next = items[0]
@@ -69,3 +101,4 @@ items.forEach((el) => {
         next = next.nextElementSibling
     }
 })
+*/
