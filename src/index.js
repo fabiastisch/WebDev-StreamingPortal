@@ -21,6 +21,14 @@ const newMovies = [
     new Movie('Life in a Year'),
     new Movie('Awake'),
     new Movie('Playhouse'),
+    new Movie('Joker',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
+    new Movie('The Forest',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
+    new Movie('Forrest Gump',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
+    new Movie('Iron Man',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
+    new Movie('Shrek Der tollkühne Held',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
+    new Movie('The Wolf of Wall Street',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
+    new Movie('Harry Potter und der Stein der Weisen',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
+
 ];
 
 const watchAgainMovies = [
@@ -67,7 +75,7 @@ viewModel.categories.forEach((value, index) => {
     });
 
     items.forEach(el => {
-            const minPerSlide = 6
+            const minPerSlide = 7
             let next = el.nextElementSibling
             for (var i = 1; i < minPerSlide; i++) {
                 if (!next) {

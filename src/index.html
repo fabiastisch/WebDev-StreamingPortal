@@ -40,7 +40,7 @@
                    <div class="row" data-bind="foreach: movies, attr: { id: 'carouselrow' + $index() }">
                        <!-- ko if: $index() === 0 -->
                        <div class="carousel-item active">
-                           <div class="col-md-2">
+                           <div class="imgAbstand">
                                <div class="cardHeights">
                                    <div class="card-img">
                                        <img src="//via.placeholder.com/500x400/31f?text=1" data-bind="attr: {src: imageUrl}" class="filmImgs">
@@ -52,7 +52,7 @@
                        <!-- /ko -->
                        <!-- ko if: $index() !== 0 -->
                        <div class="carousel-item">
-                           <div class="col-md-2">
+                           <div class="imgAbstand">
                                <div class="cardHeights">
                                    <div class="card-img">
                                        <img src="//via.placeholder.com/500x400/e66?text=2" data-bind="attr: {src: imageUrl}" class="filmImgs">
@@ -65,10 +65,10 @@
                    </div>
                 </div>
                 <!-- Buttons -->
-                <a class="carousel-control-prev bg-transparent w-aut" role="button" data-bs-slide="prev" data-bind="attr: { href: '#carousel' + $index() }">
+                <a class="carousel-control-prev arrowContainer w-aut arrowPrev" role="button" data-bs-slide="prev" data-bind="attr: { href: '#carousel' + $index() }">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </a>
-                <a class="carousel-control-next bg-transparent w-aut" role="button" data-bs-slide="next" data-bind="attr: { href: '#carousel' + $index() }">
+                <a class="carousel-control-next arrowContainer w-aut arrowNext" role="button" data-bs-slide="next" data-bind="attr: { href: '#carousel' + $index() }">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </a>
             </div>
