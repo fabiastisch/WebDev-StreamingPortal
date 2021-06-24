@@ -21,7 +21,7 @@ const newMovies = [
     new Movie('Life in a Year'),
     new Movie('Awake'),
     new Movie('Playhouse'),
-]
+];
 
 const watchAgainMovies = [
     new Movie('Avengers Endgame'),
@@ -31,7 +31,7 @@ const watchAgainMovies = [
     new Movie('Matrix'),
     new Movie('Spiderman'),
     new Movie('Spiderman 2'),
-]
+];
 
 const trendyMovies = [
     new Movie('Joker',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
@@ -41,7 +41,7 @@ const trendyMovies = [
     new Movie('Shrek Der tollkühne Held',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
     new Movie('The Wolf of Wall Street',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
     new Movie('Harry Potter und der Stein der Weisen',"https://m.media-amazon.com/images/I/514c0f7PX6L.jpg"),
-]
+];
 
 function ViewModel() {
     const self = this;

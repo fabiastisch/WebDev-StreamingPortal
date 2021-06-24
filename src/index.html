@@ -17,11 +17,23 @@
 </head>
 <body>
 
-<h1 class="text-center">NetClicks</h1>
+<div class="header">
+    <div class="headerContainer">
+        <div>
+            <h1 class="hauptuberschrift">NetClicks</h1>
+        </div>
+        <div class="headerLinks">
+            <a class="headerBreadcrumb" style="font-weight: bold">Startseite</a>
+            <a class="headerBreadcrumb">Meine Liste</a>
+            <a class="headerBreadcrumb">Neu und beliebt</a>
+            <a class="headerBreadcrumb">Zufällige wiedergabe</a>
+        </div>
+    </div>
+</div>
 
 <div data-bind="foreach: categories">
-    <div class="text-center my-3">
-        <h2 class="font-weight-light" data-bind="text: name">Title</h2>
+    <div class="text-center my-3" >
+        <h2 class="font-weight-light" style="color: white" data-bind="text: name">Title</h2>
         <div class="row mx-auto my-auto justify-content-center carusellWidth">
             <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bind="attr: { id: 'carousel' + $index() }">
                 <div class="carousel-inner" role="listbox">
@@ -33,7 +45,7 @@
                                    <div class="card-img">
                                        <img src="//via.placeholder.com/500x400/31f?text=1" data-bind="attr: {src: imageUrl}" class="filmImgs">
                                    </div>
-                                   <div class="card-img-overlay" data-bind="text: name">Film:Name</div>
+                                   <div class="card-img-overlay" data-bind="text: name" style="color: white">Film:Name</div>
                                </div>
                            </div>
                        </div>
@@ -45,7 +57,7 @@
                                    <div class="card-img">
                                        <img src="//via.placeholder.com/500x400/e66?text=2" data-bind="attr: {src: imageUrl}" class="filmImgs">
                                    </div>
-                                   <div class="card-img-overlay" data-bind="text: name">Film:Name</div>
+                                   <div class="card-img-overlay" data-bind="text: name" style="color: white">Film:Name</div>
                                </div>
                            </div>
                        </div>
