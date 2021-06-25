@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<div data-bind="foreach: categories">
+    <h3 data-bind="text: name"></h3>
+    <div class="swiper-container">
+        <div class="swiper-wrapper" data-bind="foreach: movies">
+            <div class="swiper-slide" >
+                <div data-bind="text: name"></div>
+                <div class="imageWrapper">
+                <img data-bind="attr: {src: imageUrl}, event: { mouseover: toggleShowDetails, mouseout: toggleShowDetails }" class="filmImages">
+                </div>
+                <div data-bind="if: showDetails">
+                    Show Details
+                </div>
+            </div>
+        </div>
+        <hr/>
+      <!--  <div class="swiper-pagination"></div>-->
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
+
+<script src="index.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        slidesPerGroup: 4,
+        loop: false,
+        loopFillGroupWithBlank: true,
+        pagination: {
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+
+</body>
+</html>

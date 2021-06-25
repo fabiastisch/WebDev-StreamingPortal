@@ -55,6 +55,9 @@ body{
 .carusellWidth{
     width: 95%;
 }
+*{
+    color: white;
+}
 
 .hauptuberschrift{
     color: red;
