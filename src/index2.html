@@ -21,6 +21,9 @@
                 <img data-bind="attr: {src: imageUrl}, event: { mouseover: toggleShowDetails, mouseout: toggleShowDetails }" class="filmImages">
                 </div>
                 <div data-bind="if: showDetails">
+                    <div data-bind="text: regissuer"></div>
+                    <div data-bind="text: erscheinungsjahr"></div>
+                    <div data-bind="text: darsteller"></div>
                     Show Details
                 </div>
             </div>
