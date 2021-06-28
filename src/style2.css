@@ -25,6 +25,10 @@ body{
     margin-left: 20px;
 }
 
+.swipeButtonColor{
+    color: white;
+}
+
 .headerContainer{
     display: flex;
     width: 100%;
