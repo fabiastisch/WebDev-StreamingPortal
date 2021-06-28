@@ -1,4 +1,4 @@
-function Movie(name, erscheinungsjahr, regissuer, darsteller, imageUrl) {
+function Movie(name,erscheinungsjahr,regissuer,darsteller,imageUrl) {
     const self = this;
     self.name = name;
     self.imageUrl = imageUrl || 'https://www.carlsen.de/sites/default/files/produkt/cover/harry-potter-und-der-halbblutprinz--28harry-potter-6-29.jpg';
@@ -149,8 +149,8 @@ function ViewModel() {
 const viewModel = new ViewModel();
 ko.applyBindings(viewModel);
 
-/*
 
+/*
 viewModel.categories.forEach((value, index) => {
     let elements = document.getElementById('carouselrow' + index);
     //console.log(items)
@@ -177,4 +177,23 @@ viewModel.categories.forEach((value, index) => {
             }
     });
 });
+
+
+/*
+let items = document.querySelectorAll('.carousel .carousel-item')
+
+
+items.forEach((el) => {
+    const minPerSlide = 6
+    let next = el.nextElementSibling
+    for (var i = 1; i < minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+            next = items[0]
+        }
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
+})
 */

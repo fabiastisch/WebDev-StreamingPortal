@@ -1,5 +1,63 @@
 .filmImages{
     object-fit: cover;
     width: 100%;
+}
 
+body{
+    background-color: black;
+}
+*{
+    color: white;
+}
+
+.bodyPadding{
+    padding: 15px;
+}
+.listdiv{
+    margin-bottom: 30px;
+}
+
+.hauptuberschrift{
+    color: red;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.headerContainer{
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    height: 95px;
+    background-color: black;
+    z-index: 99;
+    border-bottom: 1px solid #191919;
+}
+
+.header{
+    height: 90px;
+    margin-bottom: 20px;
+}
+
+.headerLinks{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.headerBreadcrumb{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.showDetailsBtn{
+    color: white;
+    background-color: grey;
+    border-radius: 5px;
+}
+.showDetails{
+    position: absolute;
 }
