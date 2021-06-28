@@ -49,7 +49,7 @@ const newMovies = [
                 'Marin Hinkle: Spencers Mutter'
             ],
             'https://occ-0-2773-2774.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRjVuvJiO3XrSoEcxr-c1Z9OA4BHFc5jAObF34S8K5BVn8XQmFGUmSzMdxJ2GTa0eaxuWmza-DSG_q1wq48LhalHopw.webp?r=f91'),
-        new Movie('Spiderman', '2019', 'Jon Watts', [
+        new Movie('Spiderman Far From Home', '2019', 'Jon Watts', [
             'Tom Holland: Peter Parker / Spider-Man',
             'Jake Gyllenhaal: Quentin Beck / Mysterio',
             'Jacob Batalon: Ned Leeds',
