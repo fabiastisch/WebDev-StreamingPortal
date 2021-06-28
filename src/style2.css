@@ -63,10 +63,11 @@ body{
     color: white;
     background-color: grey;
     border-radius: 5px;
+    margin-top: 15px;
 }
 .showDetails{
     position: absolute;
-    padding: 5px;
+    padding: 15px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -74,4 +75,18 @@ body{
     background: rgba(0, 0, 0, 0.427);
     width: 100%;
     height: 100%;
+}
+
+.filmname{
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.regissuerJahrDiv{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+.regissuer{
+    margin-right: 25px;
 }
