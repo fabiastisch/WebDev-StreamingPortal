@@ -25,19 +25,26 @@
 </div>
 
 <div class="selectedMovie" data-bind="with: selectedMovie"> <!--Visible when a Movie is selected && go in selectedMovie context-->
-    <button data-bind="event: {click: function(data) {$root.selectedMovie(null)} }">Back</button>
-    <h2 data-bind="text:name"></h2>
-    <hr/>
-    <h3>Regisseur</h3>
-    <div data-bind="text: regissuer"></div>
-    <h3>Erscheinungsjahr</h3>
-    <div data-bind="text: erscheinungsjahr"></div>
+    <button class="backButton" data-bind="event: {click: function(data) {$root.selectedMovie(null)} }">Back</button>
+    <div class="moreInfoDiv">
+        <h2 data-bind="text:name"></h2>
+        <div class="infoImg">
+            <img data-bind="attr: {src: imageUrl}">
+        </div>
+        <div>
+            <h3>Regisseur</h3>
+            <div data-bind="text: regissuer"></div>
+            <h3>Erscheinungsjahr</h3>
+            <div data-bind="text: erscheinungsjahr"></div>
 
-    <h3>Darsteller</h3>
-    <div data-bind="foreach: darsteller">
-        <div data-bind="text: $data"></div>
+            <h3>Darsteller</h3>
+            <ul>
+                <div data-bind="foreach: darsteller">
+                    <li data-bind="text: $data"></li>
+                </div>
+            </ul>
+        </div>
     </div>
-
 </div>
 
 <div data-bind="foreach: categories, hidden: selectedMovie" class="bodyPadding">
