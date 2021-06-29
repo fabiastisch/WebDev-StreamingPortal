@@ -38,7 +38,7 @@ body {
     margin-right: auto;
     position: fixed;
     height: 95px;
-    background: rgb(20, 20, 20);;
+    background: rgb(20, 20, 20);
     z-index: 99;
     border-bottom: 1px solid #191919;
 }
@@ -178,4 +178,25 @@ ul{
 
 .swiperNext:hover{
     background: rgba(0, 0, 0, 0.3);
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(20, 20, 20);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #d20e0e4f;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #840808;
 }
