@@ -1,35 +1,37 @@
-.filmImages{
+.filmImages {
     object-fit: cover;
     width: 100%;
 }
 
-body{
+body {
     background-color: black;
     margin: 0;
 }
-*{
+
+* {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.bodyPadding{
+.bodyPadding {
     padding: 15px;
 }
-.listdiv{
+
+.listdiv {
     margin-bottom: 30px;
 }
 
-.hauptuberschrift{
+.hauptuberschrift {
     color: red;
     margin-top: 25px;
     margin-left: 20px;
 }
 
-.swipeButtonColor{
+.swipeButtonColor {
     color: white;
 }
 
-.headerContainer{
+.headerContainer {
     display: flex;
     width: 100%;
     margin-left: auto;
@@ -41,31 +43,32 @@ body{
     border-bottom: 1px solid #191919;
 }
 
-.header{
+.header {
     height: 90px;
     margin-bottom: 20px;
 }
 
-.headerLinks{
+.headerLinks {
     display: flex;
     align-items: center;
     margin-left: 20px;
 }
 
-.headerBreadcrumb{
+.headerBreadcrumb {
     margin-left: 10px;
     margin-right: 10px;
     color: white;
     text-decoration: none;
 }
 
-.showDetailsBtn{
+.showDetailsBtn {
     color: white;
     background-color: grey;
     border-radius: 5px;
     margin-top: 15px;
 }
-.showDetails{
+
+.showDetails {
     position: absolute;
     padding: 5%;
     top: 0;
@@ -77,16 +80,33 @@ body{
     height: 100%;
 }
 
-.filmname{
+.filmname {
     font-size: 19px;
     margin-bottom: 15px;
     font-weight: bold;
 }
-.regissuerJahrDiv{
+
+.regissuerJahrDiv {
     display: flex;
     flex-direction: row;
     margin-bottom: 15px;
 }
-.regissuer{
+
+.regissuer {
     margin-right: 25px;
+}
+
+.selectedMovie {
+    margin: 20px;
+}
+
+Button {
+    background-color: #30baff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
