@@ -155,3 +155,27 @@ ul{
 .marginTop0{
     margin-top: 0;
 }
+
+.swiperNext{
+    height: 100%;
+    width: 50px;
+    top: 20px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.swiperPref{
+    height: 100%;
+    width: 50px;
+    top: 20px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.swiperPref:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.swiperNext:hover{
+    background: rgba(0, 0, 0, 0.3);
+}
