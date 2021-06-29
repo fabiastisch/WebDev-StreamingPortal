@@ -122,6 +122,10 @@ body {
     margin-right: 25px;
 }
 
+.infoImg img{
+    height: 250px;
+}
+
 ul{
     padding-left: 15px;
 }
@@ -145,4 +149,8 @@ ul{
 
 .detailsFlex{
     display: flex;
+}
+
+.marginTop0{
+    margin-top: 0;
 }
