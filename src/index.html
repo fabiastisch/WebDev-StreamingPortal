@@ -28,21 +28,23 @@
     <button class="backButton" data-bind="event: {click: function(data) {$root.selectedMovie(null)} }">Back</button>
     <div class="moreInfoDiv">
         <h2 data-bind="text:name"></h2>
-        <div class="infoImg">
-            <img data-bind="attr: {src: imageUrl}">
-        </div>
-        <div>
-            <h3>Regisseur</h3>
-            <div data-bind="text: regissuer"></div>
-            <h3>Erscheinungsjahr</h3>
-            <div data-bind="text: erscheinungsjahr"></div>
+        <div class="detailsFlex">
+            <div class="infoImg">
+                <img data-bind="attr: {src: imageUrl}">
+            </div>
+            <div>
+                <h3>Regisseur</h3>
+                <div data-bind="text: regissuer"></div>
+                <h3>Erscheinungsjahr</h3>
+                <div data-bind="text: erscheinungsjahr"></div>
 
-            <h3>Darsteller</h3>
-            <ul>
-                <div data-bind="foreach: darsteller">
-                    <li data-bind="text: $data"></li>
-                </div>
-            </ul>
+                <h3>Darsteller</h3>
+                <ul>
+                    <div data-bind="foreach: darsteller">
+                        <li data-bind="text: $data"></li>
+                    </div>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
