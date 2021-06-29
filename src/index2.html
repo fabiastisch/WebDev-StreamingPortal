@@ -13,10 +13,10 @@
 <div class="header">
     <div class="headerContainer">
         <div>
-            <h1 class="hauptuberschrift">NetClicks</h1>
+            <h1 class="hauptuberschrift cursor" data-bind="event: {click: function(data) {$root.selectedMovie(null)} }">NetClicks</h1>
         </div>
         <div class="headerLinks">
-            <a class="headerBreadcrumb" style="font-weight: bold">Startseite</a>
+            <a class="headerBreadcrumb cursor" data-bind="event: {click: function(data) {$root.selectedMovie(null)} }" style="font-weight: bold">Startseite</a>
             <a class="headerBreadcrumb">Meine Liste</a>
             <a class="headerBreadcrumb">Neu und beliebt</a>
             <a class="headerBreadcrumb">Zufällige wiedergabe</a>
