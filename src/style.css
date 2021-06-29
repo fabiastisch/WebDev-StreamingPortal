@@ -1,71 +1,37 @@
-body{
+.filmImages {
+    object-fit: cover;
+    width: 100%;
+}
+
+body {
     background-color: black;
-}
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
+    margin: 0;
 }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-        transform: translateX(0);
-    }
-
-    .carousel-inner .carousel-item-start.active,
-    .carousel-inner .carousel-item-prev {
-        transform: translateX(0);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-    transform: translateX(0);
-}
-
-.filmImgs{
-    max-width: 100%;
-    height: 300px;
-}
-.cardHeights{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-    height: 100%;
-    justify-content: center;
-}
-
-.carusellWidth{
-    width: 95%;
-}
-*{
+* {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.hauptuberschrift{
+.bodyPadding {
+    padding: 0 15px 15px 15px; /*0 on Top*/
+}
+
+.listdiv {
+    margin-bottom: 30px;
+}
+
+.hauptuberschrift {
     color: red;
-    margin-top: 20px;
+    margin-top: 25px;
     margin-left: 20px;
 }
 
-.headerContainer{
+.swipeButtonColor {
+    color: white;
+}
+
+.headerContainer {
     display: flex;
     width: 100%;
     margin-left: auto;
@@ -77,39 +43,75 @@ body{
     border-bottom: 1px solid #191919;
 }
 
-.header{
+.header {
     height: 90px;
+    margin-bottom: 20px;
 }
 
-.headerLinks{
+.headerLinks {
     display: flex;
     align-items: center;
     margin-left: 20px;
 }
 
-.headerBreadcrumb{
+.headerBreadcrumb {
     margin-left: 10px;
     margin-right: 10px;
     color: white;
     text-decoration: none;
 }
 
-.imgAbstand{
-    flex: 0 0 auto;
-    width: 14.28%;
-}
-.arrowContainer{
-    width: 50px;
-}
-
-.arrowContainer:hover{
-    background-color: #dee2e614!important;
+.showDetailsBtn {
+    color: white;
+    background-color: grey;
+    border-radius: 5px;
+    margin-top: 15px;
 }
 
-.arrowNext{
-    right: -10px;
+.showDetails {
+    position: absolute;
+    padding: 5%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.427);
+    width: 100%;
+    height: 100%;
 }
 
-.arrowPrev{
-    left: -10px;
+.filmname {
+    font-size: 19px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.regisseurJahrDiv {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.regisseur {
+    margin-right: 25px;
+}
+
+.selectedMovie {
+    margin-left: 20px;
+}
+
+Button {
+    background-color: #30baff;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cursor{
+    cursor: pointer;
 }

@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta charset="UTF-8">
     <title>NetClicks</title>
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
 
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="header">
     <div class="headerContainer">
         <div>
-            <h1 class="hauptuberschrift">NetClicks</h1>
+            <h1 class="hauptuberschrift cursor" data-bind="event: {click: function(data) {$root.selectedMovie(null)} }">NetClicks</h1>
         </div>
         <div class="headerLinks">
-            <a class="headerBreadcrumb" style="font-weight: bold">Startseite</a>
+            <a class="headerBreadcrumb cursor" data-bind="event: {click: function(data) {$root.selectedMovie(null)} }" style="font-weight: bold">Startseite</a>
             <a class="headerBreadcrumb">Meine Liste</a>
             <a class="headerBreadcrumb">Neu und beliebt</a>
             <a class="headerBreadcrumb">Zufällige wiedergabe</a>
@@ -30,61 +24,89 @@
     </div>
 </div>
 
-<div data-bind="foreach: categories">
-    <div class="text-center my-3" >
-        <h2 class="font-weight-light" style="color: white" data-bind="text: name">Title</h2>
-        <div class="row mx-auto my-auto justify-content-center carusellWidth">
-            <div class="carousel slide" data-bs-ride="carousel" data-bs-interval="false" data-bind="attr: { id: 'carousel' + $index() }">
-                <div class="carousel-inner" role="listbox">
-                   <div class="row" data-bind="foreach: movies, attr: { id: 'carouselrow' + $index() }">
-                       <!-- ko if: $index() === 0 -->
-                       <div class="carousel-item active">
-                           <div class="imgAbstand">
-                               <div class="cardHeights">
-                                   <div class="card-img">
-                                       <img src="//via.placeholder.com/500x400/31f?text=1" data-bind="attr: {src: imageUrl}" class="filmImgs">
-                                   </div>
-                                   <div class="card-img-overlay" data-bind="text: name" style="color: white">Film:Name</div>
-                               </div>
-                           </div>
-                       </div>
-                       <!-- /ko -->
-                       <!-- ko if: $index() !== 0 -->
-                       <div class="carousel-item">
-                           <div class="imgAbstand">
-                               <div class="cardHeights">
-                                   <div class="card-img">
-                                       <img src="//via.placeholder.com/500x400/e66?text=2" data-bind="attr: {src: imageUrl}" class="filmImgs">
-                                   </div>
-                                   <div class="card-img-overlay" data-bind="text: name" style="color: white">Film:Name</div>
-                               </div>
-                           </div>
-                       </div>
-                       <!-- /ko -->
-                   </div>
-                </div>
-                <!-- Buttons -->
-                <a class="carousel-control-prev arrowContainer w-aut arrowPrev" role="button" data-bs-slide="prev" data-bind="attr: { href: '#carousel' + $index() }">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </a>
-                <a class="carousel-control-next arrowContainer w-aut arrowNext" role="button" data-bs-slide="next" data-bind="attr: { href: '#carousel' + $index() }">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </a>
-            </div>
-        </div>
-        <!--<h5 class="mt-2 fw-light">Subtext</h5>-->
+<div class="selectedMovie" data-bind="with: selectedMovie"> <!--Visible when a Movie is selected && go in selectedMovie context-->
+    <button data-bind="event: {click: function(data) {$root.selectedMovie(null)} }">Back</button>
+    <h2 data-bind="text:name"></h2>
+    <hr/>
+    <h3>Regisseur</h3>
+    <div data-bind="text: regissuer"></div>
+    <h3>Erscheinungsjahr</h3>
+    <div data-bind="text: erscheinungsjahr"></div>
+
+    <h3>Darsteller</h3>
+    <div data-bind="foreach: darsteller">
+        <div data-bind="text: $data"></div>
     </div>
+
+</div>
+
+<div data-bind="foreach: categories, hidden: selectedMovie" class="bodyPadding">
+    <!--Visible when NO Movie is selected-->
+    <div class="listdiv">
+        <h3 data-bind="text: name"></h3>
+        <div class="swiper-container">
+            <div class="swiper-wrapper" data-bind="foreach: movies">
+                <div class="swiper-slide movieElement">
+                    <div class="imageWrapper">
+                        <img data-bind="attr: {src: imageUrl}, event: { mouseenter: toggleShowDetails}"
+                             class="filmImages">
+                    </div>
+                    <div data-bind="if: showDetails, event: {mouseleave: toggleShowDetails }">
+                        <div class="showDetails">
+                            <div>
+                                <div class="filmname" data-bind="text: name"></div>
+                            </div>
+                            <div class="regisseurJahrDiv">
+                                <div class="regisseur">
+                                    <div><b>Regisseur</b></div>
+                                    <div data-bind="text: regissuer"></div>
+                                </div>
+                                <div>
+                                    <div><b>Erscheinungsjahr</b></div>
+                                    <div data-bind="text: erscheinungsjahr"></div>
+                                </div>
+                            </div>
+                            <div class="darstellerDiv">
+                                <div><b>Darsteller</b></div>
+                                <div data-bind="text: darsteller[0]"></div>
+                                <div data-bind="text: darsteller[1]"></div>
+                            </div>
+                            <Button class="showDetailsBtn" data-bind="event: {click: $root.selectedMovie}"> Show
+                                Details
+                            </Button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  <div class="swiper-pagination"></div>-->
+
+            <div class="swiper-button-next swipeButtonColor"></div>
+            <div class="swiper-button-prev swipeButtonColor"></div>
+        </div>
+    </div>
+
 </div>
 
 
-<script src="index.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-        crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
-        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
-        crossorigin="anonymous"></script>
+
+<script src="index.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        slidesPerGroup: 4,
+        loop: false,
+        loopFillGroupWithBlank: true,
+        pagination: {},
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
 
 </body>
 </html>
