@@ -14,7 +14,7 @@ body {
 }
 
 .bodyPadding {
-    padding: 15px;
+    padding: 0 15px 15px 15px; /*0 on Top*/
 }
 
 .listdiv {
@@ -97,7 +97,7 @@ body {
 }
 
 .selectedMovie {
-    margin: 20px;
+    margin-left: 20px;
 }
 
 Button {
@@ -109,6 +109,7 @@ Button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .cursor{
