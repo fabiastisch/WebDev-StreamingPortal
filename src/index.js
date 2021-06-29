@@ -145,9 +145,6 @@ function ViewModel() {
         new Category('Nochmal ansehen', watchAgainMovies),
     ]
     self.selectedMovie = ko.observable(null);
-    self.selectMovie = (movie)=>{
-        sel.selectedMovie(movie);
-    }
 }
 
 const viewModel = new ViewModel();
