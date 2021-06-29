@@ -49,7 +49,7 @@ const newMovies = [
                 'Marin Hinkle: Spencers Mutter'
             ],
             'https://occ-0-2773-2774.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRjVuvJiO3XrSoEcxr-c1Z9OA4BHFc5jAObF34S8K5BVn8XQmFGUmSzMdxJ2GTa0eaxuWmza-DSG_q1wq48LhalHopw.webp?r=f91'),
-        new Movie('Spiderman Far From Home', '2019', 'Jon Watts', [
+        new Movie('Spider-Man: Far From Home', '2019', 'Jon Watts', [
             'Tom Holland: Peter Parker / Spider-Man',
             'Jake Gyllenhaal: Quentin Beck / Mysterio',
             'Jacob Batalon: Ned Leeds',
@@ -118,13 +118,132 @@ const newMovies = [
 ;
 
 const watchAgainMovies = [
-    new Movie('Avengers Endgame'),
-    new Movie('Avengers Infinity War'),
-    new Movie('Deadpool'),
-    new Movie('Deadpool 2'),
-    new Movie('Matrix'),
-    new Movie('Spiderman'),
-    new Movie('Spiderman 2'),
+    new Movie('Shazam!',"2019","David F. Sandberg",[
+        'Zachary Levi: Billy Batson als Shazam',
+        'Asher Angel: Billy Batson',
+        'Jack Dylan Grazer: Freddy Freeman',
+        'Mark Strong: Dr. Thaddeus Sivana',
+        'Djimon Hounsou: Der Zauberer Shazam',
+        'Cooper Andrews: Victor Vasquez',
+        'Marta Milans: Rosa Vasquez',
+        'Grace Fulton: Mary Bromfield',
+        'Faithe Herman: Darla Dudley',
+        'Ian Chen: Eugene Choi',
+        'Jovan Armand: Pedro Peña',
+        'Evan Marsh: Burke Breyer',
+        'Carson MacCormac: Brett Breyer',
+        'John Glover: Thaddeus’ Vater',
+        'Caroline Palmer: Billys Mutter',
+        'Lotta Losten: Dr. Lynn Crosby',
+        'David Kohlsmith: junger Billy Batson',
+        'Ethan Pugiotto junger Thaddeus Sivana',
+        'Natalia Safran: Mrs. Sivana',
+        'Adam Brody: Freddy Shazam',
+        'Ross Butler: Eugene Shazam',
+        'Michelle Borth: Mary Shazam',
+        'D. J. Cotrona: Pedro Shazam',
+        'Meagan Good: Darla Shazam',
+        'Ryan Handley: Superman (Cameo)'
+    ],"https://occ-0-4416-4415.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZavr2MjdiAB5yp8UwCjRgvmZ41kZ0kfs_yPpHGHzxf4l_uuB4v6652QWCYjxgBr-Axb8FJXFWURtpZQySuv6CboHOI.webp?r=534"),
+    new Movie('Iron Man 2',"2010","Jon Favreau",[
+        "Robert Downey Jr.: Anthony „Tony“ Stark / Iron Man",
+        "Mickey Rourke: Ivan Vanko / Whiplash",
+        "Don Cheadle: Lt. Col. James „Rhodey“ Rhodes / War Machine",
+        "Sam Rockwell: Justin Hammer" ,
+        "Gwyneth Paltrow: Virginia „Pepper“ Potts" ,
+        "Scarlett Johansson: Natasha Romanoff / „Natalie Rushman“ / Black Widow",
+        "Leslie Bibb: Christine Everhart",
+        "Samuel L. Jackson: Nick Fury",
+        "Clark Gregg: Agent Phil Coulson",
+        "John Slattery: Howard Stark",
+        "Garry Shandling: Senator Stern",
+        "Jon Favreau: „Happy“ Hogan",
+        "Kate Mara: U.S. Marshal (Cameo)",
+        "Stan Lee: Stan Lee (Cameo)",
+        "Elon Musk: er selbst (Cameo)",
+        "Max Favreau: Peter Parker"
+    ],"https://occ-0-4416-4415.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXpSNKa6bc_6Kzj4GzMy6hF3vtr9T1XbFIK7DcfWvWLkV3cKb1UrlaMOjICTy3rRWI2lVISO63oJLGvw6xJDd6O40ds.webp?r=9d1"),
+    new Movie('The Forrest',"2016","Jason Zada",[
+        "Natalie Dormer: Sara/Jess Price",
+        "Taylor Kinney: Aiden",
+        "Yukiyoshi Ozawa: Michi",
+        "Eoin Macken: Rob",
+        "Stephanie Vogt: Valerie",
+        "Noriko Sak: Mayumi",
+        "Gen Seto: Narusawa Barkeeper",
+        "Rina Takasaki: Hoshiko"
+    ],"https://occ-0-4416-4415.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ1VZjictLM4o-Xu9HieVq4S0Ds-__bs2T2V61XXEEkph3sGM-I1N2rew-HmTivaH-ux2t2YiGZYxJ_2ItKk0ftWLhM.webp?r=aad"),
+    new Movie('The Dark Knight',"2008","Christopher Nolan",[
+        "Christian Bale: Bruce Wayne / Batman",
+        "Heath Ledger: Joker",
+        "Gary Oldman: James „Jim“ Gordon",
+        "Aaron Eckhart: Harvey Dent / Two-Face",
+        "Maggie Gyllenhaal: Rachel Dawes",
+        "Michael Caine: Alfred Pennyworth",
+        "Morgan Freeman: Lucius Fox",
+        "Eric Roberts: Salvatore „Sal“ Maroni",
+        "Nestor Carbonell: Bürgermeister Garcia",
+        "Chin Han: Yinglain Lau",
+        "Joshua Harto: Coleman Reese",
+        "Keith Szarabajka: Detective Stephens",
+        "Monique Curnen: Det. Anna Ramirez",
+        "Ritchie Coster: Tschetschenischer Mafiaboss",
+        "Michael Jai White: Gambol",
+        "Anthony Michael Hall: Mike Engel",
+        "Colin McFarlane: Commissioner Gillian B. Loeb",
+        "Cillian Murphy: Jonathan Crane / Scarecrow",
+        "Nathan Gamble: Jimmy Gordon",
+        "Melinda McGraw: Barbara Gordon",
+        "William Fichtner: Bankdirektor",
+        "Thomas Lister junior: Fähren-Häftling",
+        "Beatrice Rosen: Natascha",
+        "Patrick Leahy: Mann auf der Party",
+        "David Dastmalchian: Thomas Schiff"
+        ],"https://occ-0-4416-4415.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZefmD2oL1KdFtyzLaD-hbrNrhDe9rRwc_wrbCdpBtJO_6l6Q_vzukl7c3OkO6-HDDp-n1olTXEgXkHsQg-liMv-BZA.jpg?r=e70"),
+    new Movie('Forrest Gump',"1994","Robert Zemeckis",[
+        "Tom Hanks: Forrest Gump",
+        "Robin Wright: Jenny Curran" ,
+        "Gary Sinise: Lt. Dan Taylor",
+        "Sally Field: Mrs. Gump",
+        "Mykelti Williamson: Benjamin Buford Blue „Bubba“",
+        "Michael Conner Humphreys: Forrest (Kind)",
+        "Hanna R. Hall: Jenny (Kind)",
+        "Sam Anderson: Mr. Hancock",
+        "Dick Cavett: Dick Cavett",
+        "Haley Joel Osment: Forrest Gump jr."
+    ],"https://occ-0-4416-4415.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWSCe9HDKdTzu9R3_KKQQyWafidk7DrlCPjQdkYfTkyBmiXimAsN-1gcBxGepxWWVUDXgx7bs9MLI1JYCiGfg_xJ3-I.jpg?r=6ee"),
+    new Movie('Iron Man 3',"2013","Shane Black",[
+        "Robert Downey Jr.: Tony Stark / Iron Man",
+        "Guy Pearce: Aldrich Killian",
+        "Rebecca Hall: Maya Hansen",
+        "Gwyneth Paltrow: Pepper Potts",
+        "Jon Favreau: Happy Hogan",
+        "Paul Bettany: J.A.R.V.I.S. (Stimme)",
+        "Ben Kingsley: Trevor Slattery / Mandarin",
+        "Don Cheadle: James Rhodes / War Machine",
+        "James Badge Dale: Eric Savin",
+        "Stephanie Szostak: Brandt",
+        "William Sadler: US-Präsident Ellis",
+        "Miguel Ferrer: Vizepräsident Rodriguez",
+        "Shaun Toub: Yinsen",
+        "Ty Simpkins: Harley Keener",
+        "Mark Ruffalo: Bruce Banner (Cameo)"
+    ],"https://occ-0-4416-4415.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVmiUSI-4dMzbZKASVGw0edwpC1wRttIjXE3RbuIZMOR7XXmKBdNon2dUawOlIr8NbY5CaQuIXESd8XEQdl1PV6h4HM.jpg?r=772"),
+    new Movie('Spider-Man: Homecoming',"2017","Jon Watts",[
+        "Tom Holland",
+        "Michael Keaton",
+        "Jon Favreau",
+        "Gwyneth Paltrow",
+        "Zendaya",
+        "Donald Glover",
+        "Jacob Batalon",
+        "Laura Harrier",
+        "Tony Revolori",
+        "Bokeem Woodbine",
+        "Tyne Daly",
+        "Marisa Tomei",
+        "Robert Downey Jr."
+    ],"https://occ-0-4416-4415.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbJpC21jeJPsH8cGAQTx-ijtJsdeXfoZD4mMkuqzDGW421Sx5R_YITSCyOcqmP1h8T6EGBqsUr0pHVIUl526afu7PyA.webp?r=98a"),
 ];
 
 const trendyMovies = [
@@ -149,52 +268,3 @@ function ViewModel() {
 
 const viewModel = new ViewModel();
 ko.applyBindings(viewModel);
-
-
-/*
-viewModel.categories.forEach((value, index) => {
-    let elements = document.getElementById('carouselrow' + index);
-    //console.log(items)
-    let items = [];
-    elements.childNodes.forEach(el=> {
-        if (el.className == 'carousel-item' ||el.className == 'carousel-item active' ) {
-            items.push(el)
-        }
-    });
-
-    items.forEach(el => {
-            const minPerSlide = 7
-            let next = el.nextElementSibling
-            for (var i = 1; i < minPerSlide; i++) {
-                if (!next) {
-                    // wrap carousel by using first child
-                    next = items[0]
-
-                }
-                let cloneChild = next.cloneNode(true)
-                //  console.log(el);
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
-            }
-    });
-});
-
-
-/*
-let items = document.querySelectorAll('.carousel .carousel-item')
-
-
-items.forEach((el) => {
-    const minPerSlide = 6
-    let next = el.nextElementSibling
-    for (var i = 1; i < minPerSlide; i++) {
-        if (!next) {
-            // wrap carousel by using first child
-            next = items[0]
-        }
-        let cloneChild = next.cloneNode(true)
-        el.appendChild(cloneChild.children[0])
-        next = next.nextElementSibling
-    }
-})
-*/
