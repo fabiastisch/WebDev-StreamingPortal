@@ -3,6 +3,11 @@
     width: 99%;
 }
 
+.imageWrapper{
+    height: 190px;
+    display: block;
+}
+
 body {
     background: rgb(20, 20, 20);
     margin: 0;
@@ -70,7 +75,7 @@ body {
     right: 0;
     background: rgba(0, 0, 0, 0.6);
     width: 93%;
-    height: 88%;
+    height: 90%;
     font-size: 14px;
 }
 
@@ -121,10 +126,14 @@ body {
 }
 .infoImg{
     margin-right: 25px;
+    width: 450px;
+    height: 250px;
 }
 
 .infoImg img{
-    width: 450px;
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
 }
 
 ul{
