@@ -408,7 +408,7 @@ const trendyMovies = [
         "Guinevere Turner: Elizabeth" ,
         "Krista Sutton: Sabrina",
         "Stephen Bogaert: Harold Carnes"
-    ],"https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fstatic.guim.co.uk%2Fsys-images%2FGuardian%2FPix%2Fpictures%2F2014%2F7%2F30%2F1406719784584%2Fa3673b4b-74cd-4544-8eba-bd0b51fbee5f-1360x2040.jpeg&f=1&nofb=1",
+    ],"https://occ-0-4416-4415.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABf-17uvLkL7G_YkhqsGAOSUW1Zi5R1dCeo_WrzJscY-WMA9fXQgVAyv39MtBjTofAmtoLF2uRKRp0vg372v5F8qP7TU.webp?r=b5a",
         "Der Film schildert Episoden aus dem Leben des New Yorker Investmentbankers Patrick Bateman in den späten 1980er Jahren. Sein Leben ist bestimmt von Luxusgütern, Äußerlichkeiten und dem Wunsch nach Zugehörigkeit zur Elite."),
 ];
 
