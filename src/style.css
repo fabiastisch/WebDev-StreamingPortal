@@ -64,19 +64,19 @@ body {
 
 .showDetails {
     position: absolute;
-    padding: 3%;
+    padding: 2%;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.6);
-    width: 93%;
-    height: 86%;
+    width: 95%;
+    height: 90%;
     font-size: 13px;
 }
 
 .filmname {
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -84,7 +84,7 @@ body {
 .regisseurJahrDiv {
     display: flex;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .regisseur {
@@ -106,7 +106,7 @@ body {
     background-color: #840808;
     border-radius: 5px;
     margin-top: 5px;
-    height: 30px;
+    height: 25px;
 }
 
 .showDetailsBtn:hover{
