@@ -1,11 +1,7 @@
 .filmImages {
     object-fit: cover;
     width: 99%;
-}
 
-.imageWrapper{
-    height: 190px;
-    display: block;
 }
 
 body {
@@ -75,20 +71,20 @@ body {
     right: 0;
     background: rgba(0, 0, 0, 0.6);
     width: 93%;
-    height: 90%;
-    font-size: 14px;
+    height: 86%;
+    font-size: 13px;
 }
 
 .filmname {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    margin-bottom: 5px;
     font-weight: bold;
 }
 
 .regisseurJahrDiv {
     display: flex;
     flex-direction: row;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .regisseur {
@@ -187,27 +183,6 @@ ul{
 
 .swiperNext:hover{
     background: rgba(0, 0, 0, 0.3);
-}
-
-/* width */
-::-webkit-scrollbar {
-    width: 11px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(20, 20, 20);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #d20e0e4f;
-    border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #840808;
 }
 .beschreibungsDiv{
     margin-top: 15px;
