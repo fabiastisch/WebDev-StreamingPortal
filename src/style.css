@@ -124,7 +124,7 @@ body {
 }
 
 .infoImg img{
-    height: 250px;
+    width: 450px;
 }
 
 ul{
@@ -199,4 +199,8 @@ ul{
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #840808;
+}
+.beschreibungsDiv{
+    margin-top: 15px;
+    width: 450px;
 }
